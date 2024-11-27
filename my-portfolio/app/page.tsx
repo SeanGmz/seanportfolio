@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Navbar from "./partials/nav";
-import Footer from "./partials/footer";
-import GenInfo from "./partials/geninfo";
-import Techstack from "./partials/techstack";
+import Navbar from "./sections/nav";
+import Footer from "./sections/footer";
+import GenInfo from "./sections/geninfo";
+import Techstack from "./sections/techstack";
 
 export default function Home() {
   return (

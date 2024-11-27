@@ -20,7 +20,7 @@ export default function Techstack() {
 
   const Stack = () => {
     return (
-      <div className="mb-10 md:mb-20">
+      <div className="pb-10 md:pb-20">
         <h1 className="text-2xl sm:text-4xl text-center">My Tech Stack</h1>
       </div>
     );
@@ -115,7 +115,7 @@ export default function Techstack() {
   };
 
   return (
-    <div className="py-20 md:my-24 border border-dashed border-red overflow-x-hidden">
+    <div className="py-20 md:py-24 border border-dashed border-red overflow-x-hidden">
         <Stack />
         <Uppermarquee />
         <Lowermarquee />
