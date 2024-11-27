@@ -6,8 +6,9 @@ import Techstack from "./partials/techstack";
 
 export default function Home() {
   return (
-    <div className="container w-screen">
-      <main className="w-screen">
+    <div className="">
+      <main className="">
+        <Navbar />
         <GenInfo/>
         <Techstack />
   
