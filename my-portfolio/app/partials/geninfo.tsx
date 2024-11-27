@@ -2,7 +2,7 @@ const Info = () => {
   return (
     <div className="border-solid border-2 xl:px-32 border-white-600 flex flex-col xl:flex-row items-center justify-between xl:pt-20 xl:pb-24">
       <div className="text-center xl:text-left py-10 xl:py-0">
-        <h1 className="text-7xl mb-4 xxl:text-7xl xl:text-6xl md:text-4xl sm:text-3xl">
+        <h1 className="text-3xl mb-4 xl:text-6xl md:text-4xl sm:text-3xl">
           Hi, <span>I'm Sean Gomez </span>
         </h1>
         <p className="max-w-[500px] sm:text-sm md:text-md lg:text-base text-white/50">
@@ -22,7 +22,7 @@ const Info = () => {
 
 const BriefInfo = () => {
   return (
-    <div className="flex flex-col xl:flex-row justify-between xl:px-32 my-20 items-center">
+    <div className="flex flex-col xl:flex-row justify-between xl:px-32 my-24 items-center">
       <div className="w-full text-center">
         <img
           src="https://avatars.githubusercontent.com/u/69741071?v=4"
