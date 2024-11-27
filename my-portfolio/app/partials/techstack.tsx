@@ -19,7 +19,11 @@ export default function Techstack() {
   ];
 
   const Stack = () => {
-    return <> hello </>;
+    return (
+      <div>
+        <p>My Tech Stack</p>
+      </div>
+    );
   };
 
   const Uppermarquee = () => {
@@ -32,7 +36,9 @@ export default function Techstack() {
           className="flex flex-shrink-0"
         >
           {marquee.map((image, index) => {
-            return <img src={image} key={index} className="w-24 mr-20" />;
+            return (
+              <img src={image} key={index} className="w-24 mr-20" />
+            );
           })}
         </motion.div>
 
@@ -43,7 +49,9 @@ export default function Techstack() {
           className="flex flex-shrink-0"
         >
           {marquee.map((image, index) => {
-            return <img src={image} key={index} className="w-24 mr-20" />;
+            return (
+              <img src={image} key={index} className="w-24 mr-20" />
+            );
           })}
         </motion.div>
       </div>
@@ -80,7 +88,7 @@ export default function Techstack() {
 
   const Marquee = () => {
     return (
-      <div className="py-12 border border-dashed border-red w-screen overflow-x-hidden">
+      <div className="py-12 border border-dashed border-red overflow-x-hidden">
         <Stack />
         <Uppermarquee />
         <Lowermarquee />
@@ -89,7 +97,7 @@ export default function Techstack() {
   };
 
   return (
-    <div className="w-screen flex justify-center items-center border-solid border-2 border-red-600">
+    <div className="flex justify-center items-center border-solid border-2 border-red-600">
       <Marquee />
     </div>
   );
