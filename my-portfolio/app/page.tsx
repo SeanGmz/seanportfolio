@@ -7,7 +7,7 @@ import Techstack from "./sections/techstack";
 export default function Home() {
   return (
     <div className="">
-      <main className="">
+      <main className="tracking-wider">
         <Navbar />
         <GenInfo/>
         <Techstack />
