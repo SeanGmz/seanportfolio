@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Navbar from "./sections/nav";
-import Footer from "./sections/footer";
+import Navbar from "./sections/components/nav";
+import Footer from "./sections/components/footer";
 import GenInfo from "./sections/geninfo";
 import Techstack from "./sections/techstack";
+import Background from "./sections/background";
 
 export default function Home() {
   return (
@@ -14,16 +15,10 @@ export default function Home() {
   
 
         <div className="border-solid border-2 border-blue-600">
-          <h1> projs</h1>
+          <h1> <Background /></h1>
         </div>
 
-        <div className="border-solid border-2 border-yellow-300">
-          <h1> educ bg</h1>
-        </div>
 
-        <div className="border-solid border-2 border-cyan-800">
-          <h1> work bg</h1>
-        </div>
       </main>
     </div>
   );
