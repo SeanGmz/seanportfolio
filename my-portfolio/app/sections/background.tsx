@@ -90,14 +90,14 @@ const Background = () => {
                     {ed.year}
                   </span>
 
-                  <h3 className="h-2/6 lg:text-[17px] text-[15px] ">
+                  <h3 className="h-2/6 lg:text-[16px] text-[15px] ">
                     {ed.school}
                   </h3>
 
                   <div className="h-2/6 flex flex-col sm:flex-row items-center sm:gap-2 lg:pb-3">
                     <span className="lg:w-[4px] lg:h-[4px] rounded-full bg-accent"></span>
 
-                    <p className="xl:text-[11px] md:text-[15px] text-fore/60 text-ellipsis ">
+                    <p className="xl:text-[10px] md:text-[15px] text-fore/60 text-ellipsis ">
                       {ed.program}
                     </p>
                   </div>
@@ -163,7 +163,7 @@ const Background = () => {
                   <h3
                     className={` ${
                       clickedIndex === null ? "h-2/6 " : "h-[10%] pt-1 "
-                    } lg:text-[17px] text-[15px] `}
+                    } lg:text-[16px] text-[15px] `}
                   >
                     {ed.company}
                   </h3>
@@ -178,7 +178,7 @@ const Background = () => {
                     <p
                       className={` ${
                         clickedIndex === null
-                          ? " xl:text-[11px]"
+                          ? " xl:text-[10px]"
                           : " xl:text-[15px]"
                       } md:text-[15px] text-fore/60 text-ellipsis`}
                     >
