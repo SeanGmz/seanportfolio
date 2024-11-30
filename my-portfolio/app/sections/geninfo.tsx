@@ -35,12 +35,12 @@ const Info = () => {
   };
 
   return (
-    <div className="border-solid border-2 xl:px-52 border-white-600 flex flex-col xl:flex-row items-center justify-between xl:pt-40 xl:pb-24">
+    <div className="border-solid border-2 xl:px-32 border-white-600 flex flex-col xl:flex-row items-center justify-between xl:pt-40 xl:pb-24">
       <div className="text-center xl:text-left pt-10 pb-5 xl:py-0 order-2 xl:order-none xl:w-7/12">
         <h1 className="text-3xl mb-4 xl:text-6xl md:text-4xl mx-3 md:mx-0 sm:text-3xl font-bold">
           Hi, I'm<span className="text-accent"> Sean Gomez </span>
         </h1>
-        <p className="max-w-[500px] sm:text-sm md:text-md mx-3 md:mx-0 lg:text-base text-white/50">
+        <p className="max-w-[500px] sm:text-sm md:text-md mx-3 md:mx-0 lg:text-base text-fore/50">
           A student aspiring to be full-stack web developer.
         </p>
 
@@ -96,6 +96,7 @@ const GenInfo = () => {
   return (
     <div>
       <Info />
+      <BriefInfo />
     </div>
   );
 };
