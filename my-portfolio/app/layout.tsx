@@ -2,16 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const montserratSans = localFont({
-  src: "./fonts/Montserrat-Light.ttf",
-  variable: "--font-montserrat-sans",
-  weight: "300",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-lora-serif",
-  weight: "400",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +19,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body
-        className={`${montserratSans.variable} ${geistMono.variable} antialiased border`}
+        className=" antialiased border"
       >
         {children}
       </body>
