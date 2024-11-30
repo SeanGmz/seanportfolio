@@ -51,7 +51,7 @@ const works = [
 
 const Projects = () => {
   return (
-    <div className="py-36 ">
+    <div className="pt-36 pb-14 border-2">
       <div className="justify-center">
         <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center mb-20">
           My Previous Projects
@@ -62,9 +62,9 @@ const Projects = () => {
         return (
           <div
             key={index}
-            className="flex flex-col lg:flex-row justify-between mb-[10%] items-center mx-5 xl:px-32 border-2 py-5"
+            className="flex flex-col lg:flex-row justify-between mb-10 items-center mx-5 xl:px-32 border-2 py-5"
           >
-            <div className="flex flex-col  xl:w-[40%] lg:order-none order-2 lg:pr-5">
+            <div className="flex flex-col xl:w-[40%] lg:order-none order-2 lg:pr-5">
               <span className="md:text-6xl text-4xl text-accent/70 py-3">
                 {work.num}
               </span>
