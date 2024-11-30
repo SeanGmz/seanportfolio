@@ -12,7 +12,9 @@ export default {
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
-  			accent: '#fba087'
+  			accent: '#fba087',
+			secondary: "#202025",
+			fore: "#ededed"
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
