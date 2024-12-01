@@ -64,7 +64,7 @@ const Background = () => {
 
   const EducBg = () => {
     return (
-      <div className="flex flex-col py-32 border-2 text-center lg:text-start lg:h-[80%]">
+      <div id="background" className="flex flex-col py-32 border-2 text-center lg:text-start lg:h-[80%]">
         <div className="xl:px-32 md:px-14 md:mx-3 lg:px-20 pb-10">
           <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center lg:text-start">
             My <span className="text-accent"> Education </span>

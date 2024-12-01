@@ -20,7 +20,7 @@ export default function Techstack() {
 
   const Stack = () => {
     return (
-      <div className="pb-10 md:pb-20">
+      <div id="techstack" className="pb-10 md:pb-20">
         <h1 className="text-2xl sm:text-4xl text-center">My Tech Stack</h1>
       </div>
     );
