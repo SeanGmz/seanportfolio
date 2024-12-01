@@ -10,20 +10,11 @@ export default function Home() {
   return (
     <div className="">
       <main className="tracking-wider">
-        {/* <Navbar />
+        <Navbar />
         <GenInfo/>
-        <Techstack /> */}
-
-        <div className="border-solid border-2 border-blue-600">
-          <h1>
-            <Projects />
-          </h1>
-        </div>
-        <div className="border-solid border-2 border-blue-600">
-          <h1>
-            <Background />
-          </h1>
-        </div>
+        <Techstack />
+        <Projects />
+        <Background />
       </main>
     </div>
   );
