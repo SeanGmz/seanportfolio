@@ -57,7 +57,7 @@ const Projects = () => {
         return (
           <div
             key={index}
-            className="flex flex-col lg:flex-row justify-between mb-16 items-center mx-5 xl:px-32 py-5"
+            className="flex flex-col lg:flex-row justify-between mb-16 items-center mx-5 xl:mx-0 xl:px-32 py-5"
           >
             <div className="flex flex-col xl:w-[40%] lg:order-none order-2 lg:pr-5">
               <span className="md:text-6xl text-4xl text-accent/70 py-3">
