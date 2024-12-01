@@ -46,7 +46,7 @@ const works = [
 
 const Projects = () => {
   return (
-    <div className="pt-36 pb-14 border-2">
+    <div id="projects" className="pt-36 pb-14 border-2">
       <div className="justify-center">
         <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center mb-20">
           My Previous Projects

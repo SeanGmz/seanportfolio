@@ -11,7 +11,7 @@ export default function Home() {
     <div className="">
       <main className="tracking-wider">
         <Navbar />
-        <GenInfo/>
+        <GenInfo />
         <Techstack />
         <Projects />
         <Background />
