@@ -6,6 +6,7 @@ import Techstack from "./sections/techstack";
 import Background from "./sections/background";
 import Projects from "./sections/projects";
 import ScrollTop from "./sections/components/topscroll";
+import Contact from "./sections/contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Projects />
         <Background />
         <ScrollTop />
+        <Contact />
       </main>
     </div>
   );
