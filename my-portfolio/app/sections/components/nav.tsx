@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetDescription, SheetTrigger } from "@/components/ui/sheet";
 import { SlMenu } from "react-icons/sl";
 import { useState } from "react";
 
@@ -48,6 +48,8 @@ const Navbar = () => {
         <SheetTrigger className="flex justify-center items-center">
           <SlMenu className=" text-[27px]" />
         </SheetTrigger>
+        <SheetTitle className="hidden">Quick Navigation</SheetTitle>
+        <SheetDescription className="hidden">Click on the links to navigate</SheetDescription>
         <SheetContent className="flex flex-col justify-center">
           <nav className="flex flex-col justify-center items-center gap-8 text-md md:text-lg">
             {quicknav.map((link, index) => {

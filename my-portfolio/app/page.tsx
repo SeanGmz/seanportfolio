@@ -5,6 +5,7 @@ import GenInfo from "./sections/geninfo";
 import Techstack from "./sections/techstack";
 import Background from "./sections/background";
 import Projects from "./sections/projects";
+import ScrollTop from "./sections/components/topscroll";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Techstack />
         <Projects />
         <Background />
+        <ScrollTop />
       </main>
     </div>
   );
