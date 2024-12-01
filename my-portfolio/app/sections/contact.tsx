@@ -22,9 +22,9 @@ const contacts = [
 
 const contact = () => {
   return (
-    <div className="mx-auto">
+    <div id="contact" className="mx-auto">
       <div className="flex flex-col lg:flex-row gap-[30px] justify-center items-center md:px-32 my-36">
-        <div className="xl:h-[550px] flex flex-col justify-center items-center lg:w-5/12 backdrop-blur-2xl rounded-xl bg-opacity-50">
+        <div className="xl:h-[550px] flex flex-col justify-center items-center lg:w-5/12 backdrop-blur-2xl rounded-xl bg-opacity-50 z-10">
           <h3 className=" px-3 text-2xl w-full text-accent pt-10"> Have something in mind? </h3>
           <p className=" px-3 mt-5 mb-7 text-sm md:text-base">
             Feel free to reach out if you have feedback,
