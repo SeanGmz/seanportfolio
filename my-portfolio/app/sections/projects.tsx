@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 const works = [
   {
@@ -8,7 +9,7 @@ const works = [
     tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP", "MySQL"],
     type: "Personal Project",
     img: "/resources/projects/01.png",
-    link: { icon: <FaGithub />, path: "" },
+    link: "",
   },
   {
     num: "02",
@@ -18,10 +19,7 @@ const works = [
     tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP", "MySQL"],
     type: "Collaborative Work Project",
     img: "/resources/projects/02.png",
-    link: {
-      icon: <FaGithub />,
-      path: "https://github.com/TopherGacad/cornersteel-hr-mis",
-    },
+    link: "https://github.com/TopherGacad/cornersteel-hr-mis",
   },
   {
     num: "03",
@@ -32,10 +30,7 @@ const works = [
 
     type: "Collaborative Capstone Project",
     img: "/resources/projects/03.png",
-    link: {
-      icon: <FaGithub />,
-      path: "https://github.com/jasxyke/regitech-system",
-    },
+    link: "https://github.com/jasxyke/regitech-system",
   },
   {
     num: "04",
@@ -45,7 +40,7 @@ const works = [
     tech: ["React Native", "React Native paper", "AsyncStorage"],
     type: "Collaborative Capstone Project",
     img: "/resources/projects/04.png",
-    link: { icon: <FaGithub />, path: "https://github.com/bob831/gymBuddy" },
+    link: "https://github.com/bob831/gymBuddy",
   },
 ];
 
@@ -62,16 +57,19 @@ const Projects = () => {
         return (
           <div
             key={index}
-            className="flex flex-col lg:flex-row justify-between mb-10 items-center mx-5 xl:px-32 border-2 py-5"
+            className="flex flex-col lg:flex-row justify-between mb-16 items-center mx-5 xl:px-32 py-5"
           >
             <div className="flex flex-col xl:w-[40%] lg:order-none order-2 lg:pr-5">
               <span className="md:text-6xl text-4xl text-accent/70 py-3">
                 {work.num}
               </span>
               <h1 className="text-2xl md:text-4xl">{work.title}</h1>
-              <span className="text-xs md:text-sm text-fore py-2 italic">{work.type}</span>
-              <p className="text-xs md:text-sm text-fore/70 py-3">{work.description}</p>
-              
+              <span className="text-xs md:text-sm text-fore py-2 italic">
+                {work.type}
+              </span>
+              <p className="text-xs md:text-sm text-fore/70 py-3">
+                {work.description}
+              </p>
 
               <div className=" ">
                 {work.tech.map((techused, i) => (
@@ -81,6 +79,17 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+              <Link
+                href={work.link}
+                target="_blank"
+                rel="noopener"
+                className="mt-5 mx-auto xl:mx-0 xl:mt-5 w-48 flex flex-row items-center text-accent hover:text-background hover:bg-accent hover:border-accent border-accent border-[2px] rounded-full py-3 justify-center transition-all ease-in duration-150"
+              >
+                <span className="m-0 mr-2 lg:text-sm text-xs">
+                  View Project
+                </span>
+                <FaGithub className="text-lg" />
+              </Link>
             </div>
             <div className="flex xl:w-[50%] w-full justify-center items-center">
               <div className=" xl:w-[600px] xl:h-[350px] lg:w-[500px] lg:h-[300px] w-[370px] h-[250px] overflow-hidden lg:order-none order-1 ">
