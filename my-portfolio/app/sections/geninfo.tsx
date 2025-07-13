@@ -35,7 +35,7 @@ const Info = () => {
   };
 
   return (
-    <div id="home" className="border-solid border-2 xl:px-32 border-white-600 flex flex-col xl:flex-row items-center justify-between xl:pt-24 xl:pb-24">
+    <div id="home" className="xl:px-32 flex flex-col xl:flex-row items-center justify-between xl:pt-24 xl:pb-24">
       <div className="text-center xl:text-left pt-10 pb-5 xl:py-0 order-2 xl:order-none xl:w-7/12">
         <h1 className="text-3xl mb-4 xl:text-6xl md:text-4xl mx-3 md:mx-0 sm:text-3xl font-bold">
           Hi, I'm<span className="text-accent"> Sean Gomez </span>

@@ -115,7 +115,7 @@ export default function Techstack() {
   };
 
   return (
-    <div className="py-20 md:py-24 border border-dashed border-red overflow-x-hidden">
+    <div className="py-20 md:py-24 overflow-x-hidden">
         <Stack />
         <Uppermarquee />
         <Lowermarquee />
