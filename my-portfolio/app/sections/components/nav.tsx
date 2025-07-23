@@ -16,14 +16,6 @@ const quicknav = [
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-  const handleLinkClick = (path: string) => {
-    setIsOpen(false);
-    const element = document.querySelector(path);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const FullNav = () => {
     return (
       <nav className="flex gap-5">
