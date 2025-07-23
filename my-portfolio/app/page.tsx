@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Navbar from "./sections/components/nav";
-import Footer from "./sections/components/footer";
+// import Footer from "./sections/components/footer";
 import GenInfo from "./sections/geninfo";
 import Techstack from "./sections/techstack";
 import Background from "./sections/background";
