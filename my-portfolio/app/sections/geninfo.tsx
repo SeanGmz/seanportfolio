@@ -52,10 +52,10 @@ const Info = () => {
     >
       <div className="text-center xl:text-left pt-10 pb-5 xl:py-0 order-2 xl:order-none xl:w-7/12">
         <h1 className="text-3xl mb-4 xl:text-6xl md:text-4xl mx-3 md:mx-0 sm:text-3xl font-bold">
-          Hi, I&apos;m<span className="text-accent"> Sean Gomez </span>
+          Hi, I'm<span className="text-accent"> Sean Gomez </span>
         </h1>
         <p className="max-w-[500px] sm:text-sm md:text-md mx-3 md:mx-0 lg:text-base text-fore/50">
-          A student aspiring to be full-stack web developer.
+          Aspiring to be a full-stack web developer.
         </p>
 
         <button
@@ -90,12 +90,12 @@ const BriefInfo = () => {
         <img
           src="https://avatars.githubusercontent.com/u/69741071?v=4"
           alt="Sean Gomez"
-          className="w-auto mx-auto h-40 rounded-full "
+          className="w-auto mx-auto h-40 rounded-full"
         />
       </div>
-      <div className="w-full px-10 xl:px-20 text-justify xl:text-left lg:text-base  py-10 xl:py-0">
+      <div className="w-full px-10 xl:px-20 text-justify xl:text-left lg:text-base py-10 xl:py-0">
         <p>
-          Hello, I&apos;m Sean Patrick A. Gomez, an Information Technology graduate
+          Hello, I'm Sean Patrick A. Gomez, an Information Technology graduate
           with a strong foundation in front-end and back-end web development. I
           aim to create innovative and cutting edge solutions through
           technology, with a focus on web development and sustainable IT
