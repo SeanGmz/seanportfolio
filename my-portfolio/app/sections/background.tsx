@@ -6,7 +6,7 @@ import { useState } from "react";
 // Educational Background data
 const education = [
   {
-    year: "2023 - Present",
+    year: "2023 - 2025",
     school: "La Consolacion College Manila",
     program: "Bachelor of Science in Information Technology",
   },
@@ -43,15 +43,17 @@ const experience = [
   },
 
   {
-    company: "Sample Company",
-    position: "Sample Work Position",
+    company: "Placeholder Company",
+    position: "Placeholder Work Position",
     duration: "Month YYYY - Month YYYY",
+    description: "This tab is just a placeholder for future work experience.",
   },
 
   {
-    company: "Sample Company",
-    position: "Sample Work Position",
+    company: "Placeholder Company",
+    position: "Placeholder Work Position",
     duration: "Month YYYY - Month YYYY",
+    description: "This tab is just a placeholder for future work experience.",
   },
 ];
 
@@ -64,7 +66,10 @@ const Background = () => {
 
   const EducBg = () => {
     return (
-      <div id="background" className="flex flex-col pt-32 text-center lg:text-start lg:h-[80%]">
+      <div
+        id="background"
+        className="flex flex-col pt-32 text-center lg:text-start lg:h-[80%]"
+      >
         <div className="xl:px-32 md:px-14 md:mx-3 lg:px-20 pb-10">
           <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center lg:text-start">
             My <span className="text-accent"> Education </span>
@@ -154,7 +159,9 @@ const Background = () => {
                 >
                   <span
                     className={` ${
-                      clickedIndex === null ? "h-2/6 md:py-6 pt-5" : "h-[10%] pt-5 "
+                      clickedIndex === null
+                        ? "h-2/6 md:py-6 pt-5"
+                        : "h-[10%] pt-5 "
                     }  lg:text-[15px] text-[15px] text-accent`}
                   >
                     {ed.duration}
@@ -187,23 +194,21 @@ const Background = () => {
                   </div>
 
                   {clickedIndex === index && (
-                    
-                      <div className="additional-content w-full h-[40%]  pb-6">
-                        {/* Add your additional content here */}
-                        <p className="text-[12px] xl:text-[13px] text-fore/70 mt-4">
-                          {ed.description}
-                        </p>
-                        <p
-                          className={` ${
-                            clickedIndex === null
-                              ? " xl:text-[12px] "
-                              : " xl:text-[13px] "
-                          } align-bottom mx-auto mt-5 pt-5 italic text-center`}
-                        >
-                          Click again to close
-                        </p>
-                      </div>
-                    
+                    <div className="additional-content w-full h-[40%]  pb-6">
+                      {/* Add your additional content here */}
+                      <p className="text-[12px] xl:text-[13px] text-fore/70 mt-4">
+                        {ed.description}
+                      </p>
+                      <p
+                        className={` ${
+                          clickedIndex === null
+                            ? " xl:text-[12px] "
+                            : " xl:text-[13px] "
+                        } align-bottom mx-auto mt-5 pt-5 italic text-center`}
+                      >
+                        Click again to close
+                      </p>
+                    </div>
                   )}
                 </div>
               ))}
