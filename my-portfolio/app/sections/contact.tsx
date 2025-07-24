@@ -6,17 +6,17 @@ const contacts = [
   {
     icon: <MdPhone  />,
     title: "Phone",
-    description: "(+63) 912 345 6789",
+    description: "(+63) 994 831 3400",
   },
   {
     icon: <MdAlternateEmail />,
     title: "Email",
-    description: "sampleemail@gmail.com",
+    description: "seangomez1502@gmail.com",
   },
   {
     icon: <MdLocationOn />,
     title: "Address",
-    description: "Sample Street, Sample City",
+    description: "8 Mendiola St., Manila City, Philippines",
   },
 ];
 
