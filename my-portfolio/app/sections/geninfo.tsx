@@ -4,6 +4,7 @@ import ProfilePic from "./components/pfp";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { FiDownload } from "react-icons/fi";
+import Image from "next/image";
 
 const Info = () => {
   const socials = [
@@ -87,7 +88,7 @@ const BriefInfo = () => {
       className="flex flex-col xl:flex-row justify-between xl:px-32 py-24 items-center"
     >
       <div className="w-full text-center">
-        <img
+        <Image
           src="https://avatars.githubusercontent.com/u/69741071?v=4"
           alt="Sean Gomez"
           className="w-auto mx-auto h-40 rounded-full"
