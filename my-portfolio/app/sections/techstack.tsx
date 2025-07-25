@@ -43,6 +43,7 @@ export default function Techstack() {
                 key={index}
                 className="w-9 mr-5 sm:w-20 sm:mr-20"
                 alt=""
+                fill
               />
             );
           })}
@@ -61,6 +62,7 @@ export default function Techstack() {
                 key={index}
                 className="w-9 mr-5 sm:w-20 sm:mr-20"
                 alt=""
+                fill
               />
             );
           })}
@@ -89,6 +91,7 @@ export default function Techstack() {
                 key={index}
                 className="w-9 mr-5 sm:w-20 sm:mr-20"
                 alt=""
+                fill
               />
             );
           })}
@@ -111,6 +114,7 @@ export default function Techstack() {
                 key={index}
                 className="w-9 mr-5 sm:w-20 sm:mr-20"
                 alt=""
+                fill
               />
             );
           })}

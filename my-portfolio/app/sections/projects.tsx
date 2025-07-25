@@ -98,6 +98,7 @@ const Projects = () => {
                   className=" w-full h-full object-cover object-center"
                   src={work.img}
                   alt=""
+                  fill
                 />
               </div>
             </div>
