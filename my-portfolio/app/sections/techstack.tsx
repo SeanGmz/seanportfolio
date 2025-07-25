@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion"; // Import the framer-motion library
+import Image from "next/image";
 
 export default function Techstack() {
   const marquee = [
@@ -37,10 +38,11 @@ export default function Techstack() {
         >
           {marquee.map((image, index) => {
             return (
-              <img
+              <Image
                 src={image}
                 key={index}
                 className="w-9 mr-5 sm:w-20 sm:mr-20"
+                alt=""
               />
             );
           })}
@@ -54,10 +56,11 @@ export default function Techstack() {
         >
           {marquee.map((image, index) => {
             return (
-              <img
+              <Image
                 src={image}
                 key={index}
                 className="w-9 mr-5 sm:w-20 sm:mr-20"
+                alt=""
               />
             );
           })}
@@ -81,10 +84,11 @@ export default function Techstack() {
         >
           {marquee.toReversed().map((image, index) => {
             return (
-              <img
+              <Image
                 src={image}
                 key={index}
                 className="w-9 mr-5 sm:w-20 sm:mr-20"
+                alt=""
               />
             );
           })}
@@ -102,10 +106,11 @@ export default function Techstack() {
         >
           {marquee.toReversed().map((image, index) => {
             return (
-              <img
+              <Image
                 src={image}
                 key={index}
                 className="w-9 mr-5 sm:w-20 sm:mr-20"
+                alt=""
               />
             );
           })}
