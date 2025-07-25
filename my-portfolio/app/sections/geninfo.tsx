@@ -92,6 +92,7 @@ const BriefInfo = () => {
           src="https://avatars.githubusercontent.com/u/69741071?v=4"
           alt="Sean Gomez"
           className="w-auto mx-auto h-40 rounded-full"
+          fill
         />
       </div>
       <div className="w-full px-10 xl:px-20 text-justify xl:text-left lg:text-base py-10 xl:py-0">
