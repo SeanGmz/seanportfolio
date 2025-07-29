@@ -89,12 +89,14 @@ const BriefInfo = () => {
       className="flex flex-col xl:flex-row justify-between xl:px-32 py-24 items-center"
     >
       <div className="w-full text-center">
-        <div className="relative w-auto mx-auto h-40 rounded-full">
+        <div className="relative mx-auto w-[200px] h-[200px] xl:w-[300px] xl:h-[300px] rounded-full">
           <Image
-            src="https://avatars.githubusercontent.com/u/69741071?v=4"
+            src="/resources/profile/sgdev_logo_removed.PNG"
             alt="Sean Gomez"
-            className=""
+            className="object-contain object-center"
             fill
+            sizes=""
+            quality={100}
           />
         </div>
       </div>
