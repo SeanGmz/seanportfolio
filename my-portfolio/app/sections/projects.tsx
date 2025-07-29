@@ -93,12 +93,12 @@ const Projects = () => {
               </Link>
             </div>
             <div className="flex xl:w-[50%] w-full justify-center items-center">
-              <div className=" xl:w-[600px] xl:h-[350px] lg:w-[500px] lg:h-[300px] w-[370px] h-[250px] overflow-hidden lg:order-none order-1 ">
+              <div className="relative xl:w-[600px] xl:h-[350px] lg:w-[500px] lg:h-[300px] w-[370px] h-[250px] overflow-hidden lg:order-none order-1 ">
                 <Image
-                  className=" w-full h-full object-cover object-center"
                   src={work.img}
                   alt=""
                   fill
+                  className="object-cover object-center"
                 />
               </div>
             </div>

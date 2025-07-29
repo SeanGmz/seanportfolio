@@ -6,6 +6,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FiDownload } from "react-icons/fi";
 import Image from "next/image";
 
+
 const Info = () => {
   const socials = [
     { icon: <FaGithub />, path: "https://github.com/SeanGmz" },
@@ -88,12 +89,14 @@ const BriefInfo = () => {
       className="flex flex-col xl:flex-row justify-between xl:px-32 py-24 items-center"
     >
       <div className="w-full text-center">
-        <Image
-          src="https://avatars.githubusercontent.com/u/69741071?v=4"
-          alt="Sean Gomez"
-          className="w-auto mx-auto h-40 rounded-full"
-          fill
-        />
+        <div className="relative w-auto mx-auto h-40 rounded-full">
+          <Image
+            src="https://avatars.githubusercontent.com/u/69741071?v=4"
+            alt="Sean Gomez"
+            className=""
+            fill
+          />
+        </div>
       </div>
       <div className="w-full px-10 xl:px-20 text-justify xl:text-left lg:text-base py-10 xl:py-0">
         <p>
