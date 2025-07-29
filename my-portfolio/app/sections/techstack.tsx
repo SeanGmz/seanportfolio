@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion"; // Import the framer-motion library
+import { div } from "motion/react-client";
 import Image from "next/image";
 
 export default function Techstack() {
@@ -33,18 +34,18 @@ export default function Techstack() {
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: window.innerWidth < 425 ? 20 : 60, repeat: Infinity, ease: "linear" }}
+          transition={{
+            duration: window.innerWidth < 425 ? 20 : 60,
+            repeat: Infinity,
+            ease: "linear",
+          }}
           className="flex flex-shrink-0"
         >
           {marquee.map((image, index) => {
             return (
-              <Image
-                src={image}
-                key={index}
-                className="w-9 mr-5 sm:w-20 sm:mr-20"
-                alt=""
-                fill
-              />
+              <div key={index} className="relative w-9 h-9 mr-5 sm:w-20 sm:h-20 sm:mr-20">
+                <Image src={image} key={index} className="fill" alt="" fill />
+              </div>
             );
           })}
         </motion.div>
@@ -52,18 +53,18 @@ export default function Techstack() {
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: window.innerWidth < 425 ? 20 : 60, repeat: Infinity, ease: "linear" }}
+          transition={{
+            duration: window.innerWidth < 425 ? 20 : 60,
+            repeat: Infinity,
+            ease: "linear",
+          }}
           className="flex flex-shrink-0"
         >
           {marquee.map((image, index) => {
             return (
-              <Image
-                src={image}
-                key={index}
-                className="w-9 mr-5 sm:w-20 sm:mr-20"
-                alt=""
-                fill
-              />
+              <div key={index} className="relative w-9 h-9 mr-5 sm:w-20 sm:h-20 sm:mr-20">
+                <Image src={image} key={index} className="fill" alt="" fill />
+              </div>
             );
           })}
         </motion.div>
@@ -86,13 +87,9 @@ export default function Techstack() {
         >
           {marquee.toReversed().map((image, index) => {
             return (
-              <Image
-                src={image}
-                key={index}
-                className="w-9 mr-5 sm:w-20 sm:mr-20"
-                alt=""
-                fill
-              />
+              <div key={index} className="relative w-9 h-9 mr-5 sm:w-20 sm:h-20 sm:mr-20">
+                <Image src={image} key={index} className="fill" alt="" fill />
+              </div>
             );
           })}
         </motion.div>
@@ -109,13 +106,9 @@ export default function Techstack() {
         >
           {marquee.toReversed().map((image, index) => {
             return (
-              <Image
-                src={image}
-                key={index}
-                className="w-9 mr-5 sm:w-20 sm:mr-20"
-                alt=""
-                fill
-              />
+              <div key={index} className="relative w-9 h-9 mr-5 sm:w-20 sm:h-20 sm:mr-20">
+                <Image src={image} key={index} className="fill" alt="" fill />
+              </div>
             );
           })}
         </motion.div>
@@ -125,9 +118,9 @@ export default function Techstack() {
 
   return (
     <div className="py-20 md:py-24 overflow-x-hidden">
-        <Stack />
-        <Uppermarquee />
-        <Lowermarquee />
-      </div>
+      <Stack />
+      <Uppermarquee />
+      <Lowermarquee />
+    </div>
   );
 }
