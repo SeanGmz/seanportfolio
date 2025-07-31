@@ -2,23 +2,9 @@
 import { motion } from "framer-motion"; // Import the framer-motion library
 import { div } from "motion/react-client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Techstack() {
-  const marquee = [
-    "/resources/01.svg",
-    "/resources/02.svg",
-    "/resources/03.svg",
-    "/resources/04.svg",
-    "/resources/05.svg",
-    "/resources/06.svg",
-    "/resources/07.svg",
-    "/resources/08.svg",
-    "/resources/09.svg",
-    "/resources/10.svg",
-    "/resources/12.svg",
-    "/resources/13.svg",
-    "/resources/14.svg",
-  ];
 
   const Stack = () => {
     return (
@@ -29,13 +15,36 @@ export default function Techstack() {
   };
 
   const Uppermarquee = () => {
+    const [duration, setDuration] = useState(60);
+
+    useEffect(() => {
+      const isMobile = window.innerWidth < 425;
+      setDuration(isMobile ? 20 : 60); // Adjust duration based on screen size
+    }, []);
+
+    const marquee = [
+    "/resources/marquee/01.svg",
+    "/resources/marquee/02.svg",
+    "/resources/marquee/03.svg",
+    "/resources/marquee/05.svg",
+    "/resources/marquee/06.svg",
+    "/resources/marquee/07.svg",
+    "/resources/marquee/08.svg",
+    "/resources/marquee/09.svg",
+    "/resources/marquee/10.svg",
+    "/resources/marquee/11.svg",
+    "/resources/marquee/12.svg",
+    "/resources/marquee/13.svg",
+    ];
+
     return (
       <div className="flex mx-5 xl:mx-20 mb-10 overflow-x-hidden marquee">
+        
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
           transition={{
-            duration: window.innerWidth < 425 ? 20 : 60,
+            duration: duration,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -43,8 +52,10 @@ export default function Techstack() {
         >
           {marquee.map((image, index) => {
             return (
-              <div key={index} className="relative w-9 h-9 mr-5 sm:w-20 sm:h-20 sm:mr-20">
-                <Image src={image} key={index} className="fill" alt="" fill />
+              <div key={index} className="px-5 py-5 mr-20 bg-secondary rounded-lg">
+                <div className="relative w-9 h-9 sm:w-20 sm:h-20">
+                  <Image src={image} key={index} className="fill" alt="" fill />
+                </div>
               </div>
             );
           })}
@@ -54,7 +65,7 @@ export default function Techstack() {
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
           transition={{
-            duration: window.innerWidth < 425 ? 20 : 60,
+            duration: duration,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -62,8 +73,10 @@ export default function Techstack() {
         >
           {marquee.map((image, index) => {
             return (
-              <div key={index} className="relative w-9 h-9 mr-5 sm:w-20 sm:h-20 sm:mr-20">
-                <Image src={image} key={index} className="fill" alt="" fill />
+              <div key={index} className="px-5 py-5 mr-20 bg-secondary rounded-lg">
+                <div className="relative w-9 h-9 sm:w-20 sm:h-20">
+                  <Image src={image} key={index} className="fill" alt="" fill />
+                </div>
               </div>
             );
           })}
@@ -73,13 +86,34 @@ export default function Techstack() {
   };
 
   const Lowermarquee = () => {
+    const [duration, setDuration] = useState(60);
+
+    useEffect(() => {
+      const isMobile = window.innerWidth < 425;
+      setDuration(isMobile ? 20 : 60); // Adjust duration based on screen size
+    }, []);
+
+    const marquee = [
+    "/resources/marquee/01.svg",
+    "/resources/marquee/02.svg",
+    "/resources/marquee/03.svg",
+    "/resources/marquee/05.svg",
+    "/resources/marquee/06.svg",
+    "/resources/marquee/07.svg",
+    "/resources/marquee/08.svg",
+    "/resources/marquee/09.svg",
+    "/resources/marquee/10.svg",
+    "/resources/marquee/12.svg",
+    "/resources/marquee/13.svg",
+    ];
+
     return (
       <div className="flex mx-5 xl:mx-20 overflow-x-hidden marquee">
         <motion.div
           initial={{ x: "-100%" }}
           animate={{ x: 0 }}
           transition={{
-            duration: window.innerWidth < 425 ? 20 : 60,
+            duration: duration,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -87,8 +121,10 @@ export default function Techstack() {
         >
           {marquee.toReversed().map((image, index) => {
             return (
-              <div key={index} className="relative w-9 h-9 mr-5 sm:w-20 sm:h-20 sm:mr-20">
-                <Image src={image} key={index} className="fill" alt="" fill />
+              <div key={index} className="px-5 py-5 mr-20 bg-secondary rounded-lg">
+                <div className="relative w-9 h-9 sm:w-20 sm:h-20">
+                  <Image src={image} key={index} className="fill" alt="" fill />
+                </div>
               </div>
             );
           })}
@@ -98,7 +134,7 @@ export default function Techstack() {
           initial={{ x: "-100%" }}
           animate={{ x: 0 }}
           transition={{
-            duration: window.innerWidth < 425 ? 20 : 60, // Change duration based on screen size
+            duration: duration,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -106,8 +142,10 @@ export default function Techstack() {
         >
           {marquee.toReversed().map((image, index) => {
             return (
-              <div key={index} className="relative w-9 h-9 mr-5 sm:w-20 sm:h-20 sm:mr-20">
-                <Image src={image} key={index} className="fill" alt="" fill />
+              <div key={index} className="px-5 py-5 mr-20 bg-secondary rounded-lg">
+                <div className="relative w-9 h-9 sm:w-20 sm:h-20">
+                  <Image src={image} key={index} className="fill" alt="" fill />
+                </div>
               </div>
             );
           })}
