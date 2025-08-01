@@ -1,8 +1,6 @@
 "use client";
-import { motion } from "framer-motion"; // Import the framer-motion library
-import { div } from "motion/react-client";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useAnimate, motion } from "framer-motion"; // Import the framer-motion library
+import { useEffect, useRef, useState } from "react";
 import {
   FaHtml5,
   FaPhp,
@@ -10,7 +8,7 @@ import {
   FaBootstrap,
   FaNodeJs,
 } from "react-icons/fa6";
-import { SiTailwindcss, SiTypescript, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { RiGithubFill, RiReactjsLine } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
@@ -45,26 +43,47 @@ export default function Techstack() {
   ];
 
   const Uppermarquee = () => {
+    const [scope, animate] = useAnimate();
+    const triggerRef = useRef<any>(null);
+
+    useEffect(() => {
+      triggerRef.current = animate(
+        scope.current,
+        {
+          x: "-50%",
+        },
+        {
+          duration: 30,
+          repeat: Infinity,
+          ease: "linear",
+        }
+      );
+      return () => triggerRef.current.stop();
+    }, []);
+
+    const handlePause = () => {
+      triggerRef.current.pause();
+    };
+    const handlePlay = () => {
+      triggerRef.current.play();
+    };
+
     return (
       <div className="flex mx-5 xl:mx-20 mb-10 overflow-x-hidden marquee">
         <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{
-            duration: 60,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          className="flex flex-shrink-0"
+          ref={scope}
+          onMouseEnter={handlePause}
+          onMouseLeave={handlePlay}
+          className="flex flex-shrink-0 mt-2"
         >
-          {marquee.map((tech, index) => {
+          {[...marquee, ...marquee].map((tech, index) => {
             return (
               <div
                 key={index}
-                className="px-5 py-5 mr-5 sm:mr-20 bg-secondary rounded-lg"
+                className="px-5 py-5 mr-5 sm:mr-10 lg:mr-20 bg-secondary rounded-lg hover:bg-accent hover:text-[#18181b] text-accent transition ease-in-out duration-300 hover:-translate-y-1"
               >
-                <div className="relative flex justify-center items-center w-6 h-6 sm:w-20 sm:h-20">
-                  <div className=" text-accent text-[2.25rem] sm:text-[4.10rem]">
+                <div className="relative flex justify-center items-center w-6 h-6 sm:w-10 sm:h-10 lg:w-20 lg:h-20">
+                  <div className="text-[2.25rem] sm:text-[3.25rem] lg:text-[4.10rem]">
                     {tech.src}
                   </div>
                 </div>
@@ -72,112 +91,69 @@ export default function Techstack() {
             );
           })}
         </motion.div>
-
-        {/* <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{
-            duration: duration,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          className="flex flex-shrink-0"
-        >
-          {marquee.map((image, index) => {
-            return (
-              <div
-                key={index}
-                className="px-5 py-5 mr-20 bg-secondary rounded-lg"
-              >
-                <div className="relative w-9 h-9 sm:w-20 sm:h-20">
-                  <Image src={image.src} key={index} className="fill" alt="" fill />
-                </div>
-              </div>
-            );
-          })}
-        </motion.div> */}
       </div>
     );
   };
 
-  // const Lowermarquee = () => {
-  //   const [duration, setDuration] = useState(60);
+  const Lowermarquee = () => {
+    const [scope, animate] = useAnimate();
+    const triggerRef = useRef<any>(null);
 
-  //   useEffect(() => {
-  //     const isMobile = window.innerWidth < 425;
-  //     setDuration(isMobile ? 10 : 60); // Adjust duration based on screen size
-  //   }, []);
+    useEffect(() => {
+      triggerRef.current = animate(
+        scope.current,
+        {
+          x: "0%",
+        },
+        {
+          duration: 30,
+          repeat: Infinity,
+          ease: "linear",
+        }
+      );
+      return () => triggerRef.current.stop();
+    }, []);
 
-  //   return (
-  //     <div className="flex mx-5 xl:mx-20 overflow-x-hidden marquee">
-  //       <motion.div
-  //         initial={{ x: "-100%" }}
-  //         animate={{ x: 0 }}
-  //         transition={{
-  //           duration: duration,
-  //           repeat: Infinity,
-  //           ease: "linear",
-  //         }}
-  //         className="flex flex-shrink-0"
-  //       >
-  //         {marquee.toReversed().map((image, index) => {
-  //           return (
-  //             <div
-  //               key={index}
-  //               className="px-5 py-5 mr-20 bg-secondary rounded-lg"
-  //             >
-  //               <div className="relative w-9 h-9 sm:w-20 sm:h-20">
-  //                 <Image
-  //                   src={image.src}
-  //                   key={index}
-  //                   className="fill"
-  //                   alt=""
-  //                   fill
-  //                 />
-  //               </div>
-  //             </div>
-  //           );
-  //         })}
-  //       </motion.div>
+    const handlePause = () => {
+      triggerRef.current.pause();
+    };
+    const handlePlay = () => {
+      triggerRef.current.play();
+    };
 
-  //       <motion.div
-  //         initial={{ x: "-100%" }}
-  //         animate={{ x: 0 }}
-  //         transition={{
-  //           duration: duration,
-  //           repeat: Infinity,
-  //           ease: "linear",
-  //         }}
-  //         className="flex flex-shrink-0 "
-  //       >
-  //         {marquee.toReversed().map((image, index) => {
-  //           return (
-  //             <div
-  //               key={index}
-  //               className="px-5 py-5 mr-20 bg-secondary rounded-lg"
-  //             >
-  //               <div className="relative w-9 h-9 sm:w-20 sm:h-20">
-  //                 <Image
-  //                   src={image.src}
-  //                   key={index}
-  //                   className="fill"
-  //                   alt=""
-  //                   fill
-  //                 />
-  //               </div>
-  //             </div>
-  //           );
-  //         })}
-  //       </motion.div>
-  //     </div>
-  //   );
-  // };
+    return (
+      <div className="flex mx-5 xl:mx-20 mb-10 overflow-x-hidden marquee">
+        <motion.div
+          ref={scope}
+          initial={{ x: "-50%" }}
+          onMouseEnter={handlePause}
+          onMouseLeave={handlePlay}
+          className="flex flex-shrink-0 mt-2"
+        >
+          {[...marquee, ...marquee].toReversed().map((tech, index) => {
+            return (
+              <div
+                key={index}
+                className="px-5 py-5 mr-5 sm:mr-10 lg:mr-20 bg-secondary rounded-lg hover:bg-accent hover:text-[#18181b] text-accent transition ease-in-out duration-300 hover:-translate-y-1"
+              >
+                <div className="relative flex justify-center items-center w-6 h-6 sm:w-10 sm:h-10 lg:w-20 lg:h-20">
+                  <div className="text-[2.25rem] sm:text-[3.25rem] lg:text-[4.10rem]">
+                    {tech.src}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </motion.div>
+      </div>
+    );
+  };
 
   return (
     <div className="py-20 md:py-24 overflow-x-hidden">
       <Stack />
       <Uppermarquee />
-      {/* <Lowermarquee /> */}
+      <Lowermarquee />
     </div>
   );
 }
