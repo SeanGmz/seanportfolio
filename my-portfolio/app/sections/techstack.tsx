@@ -1,6 +1,6 @@
 "use client";
 import { useAnimate, motion } from "framer-motion"; // Import the framer-motion library
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import {Marquee1, Marquee2} from "./components/maquee"; // Import the stackMarquee function
 
 const Techstack = () => {
@@ -14,7 +14,7 @@ const Techstack = () => {
 
   const Uppermarquee = () => {
     const [scope, animate] = useAnimate();
-    const triggerRef = useRef<any>(null);
+    const triggerRef = useRef<ReturnType<typeof animate> | null>(null);
 
     useEffect(() => {
       triggerRef.current = animate(
@@ -28,14 +28,14 @@ const Techstack = () => {
           ease: "linear",
         }
       );
-      return () => triggerRef.current.stop();
-    }, []);
+      return () => triggerRef.current?.stop();
+    }, [scope, animate]);
 
     const handlePause = () => {
-      triggerRef.current.pause();
+      triggerRef.current?.pause();
     };
     const handlePlay = () => {
-      triggerRef.current.play();
+      triggerRef.current?.play();
     };
 
     return (
@@ -55,7 +55,7 @@ const Techstack = () => {
 
   const Lowermarquee = () => {
     const [scope, animate] = useAnimate();
-    const triggerRef = useRef<any>(null);
+    const triggerRef = useRef<ReturnType<typeof animate> | null>(null);
 
     useEffect(() => {
       triggerRef.current = animate(
@@ -69,14 +69,14 @@ const Techstack = () => {
           ease: "linear",
         }
       );
-      return () => triggerRef.current.stop();
-    }, []);
+      return () => triggerRef.current?.stop();
+    }, [scope, animate]);
 
     const handlePause = () => {
-      triggerRef.current.pause();
+      triggerRef.current?.pause();
     };
     const handlePlay = () => {
-      triggerRef.current.play();
+      triggerRef.current?.play();
     };
 
     return (
