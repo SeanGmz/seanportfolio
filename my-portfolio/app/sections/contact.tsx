@@ -1,6 +1,8 @@
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+'use client';
+
+
 import { MdPhone, MdAlternateEmail, MdLocationOn } from "react-icons/md";
+import  ContactForm from "@/components/elements/contactform";
 
 const contacts = [
   {
@@ -21,6 +23,7 @@ const contacts = [
 ];
 
 const contact = () => {
+
   return (
     <div id="contact" className="mx-auto">
       <div className="flex flex-col lg:flex-row gap-[30px] justify-center items-center md:px-32 my-36">
@@ -50,37 +53,7 @@ const contact = () => {
           </ul>
         </div>
         <div className="xl:h-full w-full px-5 lg:px-0 lg:w-6/12">
-          <form className="flex flex-col gap-6 px-5 py-10 md:p-10 bg-secondary rounded-xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <Input type="fullname" placeholder="Fullname" />
-              <Input type="phone" placeholder="Phone number" />
-              <Input
-                type="email"
-                placeholder="Email address"
-                className=" md:col-span-2"
-              />
-
-              <Input
-                type="subject"
-                placeholder="Subject"
-                className=" md:col-span-2"
-              />
-              <Textarea
-                className="md:col-span-2 focus:ring-2"
-                placeholder="Type your message here."
-              />
-            </div>
-            <div className="flex flex-row justify-center">
-              <button
-                type="button"
-                className="mt-10 w-full xl:mx-0 xl:mt-5 text-background bg-accent hover:bg-accent/80  rounded-full px-8 py-3 transition-all ease-in duration-150"
-              >
-                <span className="mx-auto text-sm md:text-base ">
-                  Submit response
-                </span>
-              </button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </div>
