@@ -53,7 +53,7 @@ export const Marquee1 = () => {
                 </div>
               </div>
             </TooltipTrigger>
-            <TooltipContent className="z-50 rounded-md bg-secondary px-3 py-2 md:text-md text-fore shadow-[0_-4px_6px_-1px_#18181b,0_2px_4px_-2px_#000]">
+            <TooltipContent className="z-50 rounded-md bg-secondary text-xs px-3 py-2 md:text-md text-fore shadow-[0_-4px_6px_-1px_#18181b,0_2px_4px_-2px_#000]">
               {tech.title}
             </TooltipContent>
           </Tooltip>
@@ -78,7 +78,7 @@ export const Marquee2 = () => {
                 </div>
               </div>
             </TooltipTrigger>
-            <TooltipContent className="z-50 rounded-md bg-secondary px-3 py-2 md:text-md text-fore shadow-[0_-4px_6px_-1px_#18181b,0_2px_4px_-2px_#000]">
+            <TooltipContent className="z-50 rounded-md bg-secondary text-xs px-3 py-2 md:text-md text-fore shadow-[0_-4px_6px_-1px_#18181b,0_2px_4px_-2px_#000]">
               {tech.title}
             </TooltipContent>
           </Tooltip>
