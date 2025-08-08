@@ -1,7 +1,7 @@
 "use client";
 import { useAnimate, motion } from "framer-motion"; // Import the framer-motion library
 import { useEffect, useRef } from "react";
-import {Marquee1, Marquee2} from "./components/maquee"; // Import the stackMarquee function
+import { Marquee1, Marquee2 } from "@/components/elements/maquee"; // Import the stackMarquee function
 
 const Techstack = () => {
   const Stack = () => {
@@ -47,7 +47,6 @@ const Techstack = () => {
           className="flex flex-shrink-0 mt-2"
         >
           <Marquee1 />
-          
         </motion.div>
       </div>
     );
@@ -89,7 +88,6 @@ const Techstack = () => {
           className="flex flex-shrink-0 mt-2"
         >
           <Marquee2 />
-          
         </motion.div>
       </div>
     );
@@ -102,6 +100,6 @@ const Techstack = () => {
       <Lowermarquee />
     </div>
   );
-}
+};
 
 export default Techstack;

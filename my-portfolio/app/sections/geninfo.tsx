@@ -1,11 +1,10 @@
-'use client';
+"use client";
 import Link from "next/link";
-import ProfilePic from "./components/pfp";
+import ProfilePic from "@/components/elements/pfp";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { FiDownload } from "react-icons/fi";
 import Image from "next/image";
-
 
 const Info = () => {
   const socials = [
@@ -45,7 +44,7 @@ const Info = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
+  };
 
   return (
     <div

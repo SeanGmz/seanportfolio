@@ -1,11 +1,11 @@
-import Navbar from "./sections/components/nav";
+import Navbar from "@/components/navigation/nav";
 // import Footer from "./sections/components/footer";
-import GenInfo from "./sections/geninfo";
-import Techstack from "./sections/techstack";
-import Background from "./sections/background";
-import Projects from "./sections/projects";
-import ScrollTop from "./sections/components/topscroll";
-import Contact from "./sections/contact";
+import GenInfo from "@/app/sections/geninfo";
+import Techstack from "@/app/sections/techstack";
+import Background from "@/app/sections/background";
+import Projects from "@/app/sections/projects";
+import ScrollTop from "@/components/navigation/topscroll";
+import Contact from "@/app/sections/contact";
 
 export default function Home() {
   return (
