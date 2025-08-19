@@ -10,6 +10,7 @@ body {
   color: var(--foreground);
   font-family: 'JetBrains Mono', monospace;
   background: var(--background);
+  border: none
   
 }
 
