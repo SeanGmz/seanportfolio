@@ -71,7 +71,7 @@ const Navbar = () => {
     <div className="text-fore py-8  xl:px-36 lg:px-30 md:px-20 px-5">
       <div className="mx-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-2xl"> Mi porfolio </h1>
+          <h1 className="text-4xl tracking-widest"> SG<span className="text-[#ededed]/50">&bull;</span><span className="text-accent">Dev</span></h1>
         </Link>
 
         <div className="hidden lg:flex items-center gap-5 text-sm">
