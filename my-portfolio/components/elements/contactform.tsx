@@ -17,7 +17,9 @@ const ContactForm = () => {
     const message = formData.get("message");
 
     alert(
-      `you searched '${fullname}' with phone number '${phone}', email '${email}', subject '${subject}', and message '${message}'`
+      `You inputted: '${fullname}' with phone number '${phone}', email '${email}', subject '${subject}', and message '${message}'
+      
+Important Note: This is only a test, Contact form is under development`
     );
   };
 
