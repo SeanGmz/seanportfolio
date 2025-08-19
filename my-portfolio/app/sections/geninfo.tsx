@@ -39,8 +39,8 @@ const Info = () => {
   const downloadCV = () => {
     // Function to handle CV download
     const link = document.createElement("a");
-    link.href = "/path/to/your/cv.pdf"; // Replace with the actual path to your CV
-    link.download = "Sean_Gomez_CV.pdf"; // Name of the downloaded file
+    link.href = "/resources/resume/SeanGomez_CV.pdf"; // Replace with the actual path to your CV
+    link.download = "SeanGomez_CV.pdf"; // Name of the downloaded file
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
