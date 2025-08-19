@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: "SGDev | Sean Patrick A. Gomez",
   description: "Personal portfolio of Sean Patrick A. Gomez",
   icons: {
-    icon: "@/app/sgdev_logo.ico",
-    shortcut: "@/app/sgdev_logo.ico",
-    apple: "@/app/sgdev_logo.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
