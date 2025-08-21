@@ -43,6 +43,16 @@ const works = [
     img: "/resources/projects/04.png",
     link: "https://github.com/bob831/gymBuddy",
   },
+  {
+    num: "05",
+    title: "UrbanAid",
+    description:
+      "A  digital platform for community clean-up initiatives that helps schedule events, manage participants, and encourage collective action for better urban waste management",
+    tech: ["Python", "CustomTKinter", "Tkinter", "SQLite"],
+    type: "Personal Project",
+    img: "/resources/projects/05.png",
+    link: "https://github.com/SeanGmz/UrbanAide",
+  },
 ];
 
 const Projects = () => {
