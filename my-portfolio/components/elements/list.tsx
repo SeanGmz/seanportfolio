@@ -11,13 +11,13 @@ import {
 
 export const List = () => {
   return (
-    <div className="grid grid-cols-3 gap-y-2 gap-x-10 sm:gap-y-20 sm:gap-x-5 justify-center text-center items-center">
+    <div className="grid grid-cols-3 gap-y-3 gap-x-10 xs:gap-5 sm:gap-x-10 sm:gap-y-5 justify-center text-center items-center">
       <TooltipProvider delayDuration={0}>
         {...stackList.toReversed().map((tech, index) => (
           <Tooltip key={index}>
             <div className="justify-center flex">
               <TooltipTrigger asChild>
-                <div className="group sm:px-10 px-8 sm:py-12 py-9 bg-secondary rounded-lg hover:bg-accent hover:text-[#18181b] text-accent transition ease-in-out duration-300 cursor-pointer transform-gpu will-change-transform hover:-translate-y-[2px]">
+                <div className="group md:px-10 md:py-12 sm:px-9 sm:py-11 px-8  py-9 bg-secondary rounded-lg hover:bg-accent hover:text-[#18181b] text-accent transition ease-in-out duration-300 cursor-pointer transform-gpu will-change-transform hover:-translate-y-[2px]">
                   <div className="relative pt-3 flex flex-col justify-center items-center w-6 h-6 sm:w-10 sm:h-10">
                     <div className="text-[2.25rem] sm:text-[3.25rem] ">
                       {tech.src}
