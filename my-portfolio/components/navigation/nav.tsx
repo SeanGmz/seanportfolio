@@ -38,7 +38,7 @@ const Navbar = () => {
     return (
       <Sheet open={isOpen} onOpenChange={ setIsOpen }>
         <SheetTrigger className="flex justify-center items-center">
-          <SlMenu className=" text-[27px]" />
+          <SlMenu className="text-2xl sm:text-3xl md:text-4xl" />
         </SheetTrigger>
         <SheetTitle className="hidden">Quick Navigation</SheetTitle>
         <SheetDescription className="hidden">Click on the links to navigate</SheetDescription>
@@ -68,10 +68,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-fore py-8  xl:px-36 lg:px-30 md:px-20 px-5">
+    <div className="text-fore py-3 mt-3 md:py-8 md:mt-0  xl:px-36 lg:px-30 md:px-20 px-5">
       <div className="mx-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-4xl tracking-widest"> SG<span className="text-[#ededed]/50">&bull;</span><span className="text-accent">Dev</span></h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl tracking-widest"> SG<span className="text-[#ededed]/50">&bull;</span><span className="text-accent">Dev</span></h1>
         </Link>
 
         <div className="hidden lg:flex items-center gap-5 text-sm">

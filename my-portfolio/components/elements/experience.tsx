@@ -46,7 +46,7 @@ export const WorkExperience = () => {
           <div
             className={`${
               clickedIndex === null
-                ? "grid grid-cols-1 xl:grid-cols-2 gap-5 md:max-h-[290px] "
+                ? "grid grid-cols-1 xl:grid-cols-2 gap-5 lg:max-h-[290px] "
                 : "grid-cols-1 md:h-auto"
             } pt-1`}
           >

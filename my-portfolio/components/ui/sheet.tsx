@@ -66,7 +66,7 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       <SheetPrimitive.Close className="absolute right-8 top-8 transition-opacity outline-none">
-        <TfiClose className="text-[27px] text-fore/50"  />
+        <TfiClose className="text-2xl sm:text-3xl md:text-4xl text-fore/50"  />
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>
       {children}

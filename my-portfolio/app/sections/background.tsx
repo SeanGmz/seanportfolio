@@ -37,16 +37,16 @@ const Background = () => {
     return (
       <div
         id="background"
-        className="flex flex-col pt-32 text-center lg:text-start lg:h-[80%]"
+        className="flex flex-col pt-32 text-center lg:text-start lg:h-[80%] xl:mx-0 mx-5 xl:px-32"
       >
-        <div className="xl:px-32 md:px-14 md:mx-3 lg:px-20 pb-10">
+        <div className="pb-10">
           <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center lg:text-start">
             My <span className="text-accent"> Education </span>
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between md:px-14 xl:px-32 lg:px-20 md:mx-3 px-0 mx-5">
-          <div className="lg:w-4/12 xl:mb-0 mb-10 md:text-base text-sm md:mr-5 text-center lg:text-start text-fore/70">
-            <p>
+        <div className="flex flex-col lg:flex-row justify-between px-0">
+          <div className="lg:w-4/12 lg:mb-0 mb-10 md:text-base text-sm md:mr-5 text-center lg:text-start">
+            <p className="leading-7 text-fore">
               Throughout my academic journey, I have developed a strong
               foundation in technology, programming, and system design,
               complemented by practical experience in projects that address
@@ -54,7 +54,7 @@ const Background = () => {
             </p>
           </div>
           <ScrollArea className="lg:pr-4 lg:w-8/12 group">
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 lg:max-h-[285px] pt-1">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 pt-1 lg:max-h-[290px]">
               {education.map((ed, index) => (
                 <div
                   className="bg-secondary rounded-xl xl:rounded-xl  text-xs h-[180px] md:h-[130px] flex flex-col justify-center items-center lg:items-start px-6 leading-5 transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10"
@@ -86,15 +86,15 @@ const Background = () => {
 
   const WorkBg = () => {
     return (
-      <div className="flex flex-col py-28 justify-center text-center lg:text-start lg:h-[80%]">
-        <div className="xl:px-32 md:px-14 md:mx-3 lg:px-20 pb-10">
+      <div className="flex flex-col py-28 justify-center text-center lg:text-start lg:h-[80%] xl:mx-0 mx-5 xl:px-32">
+        <div className="md:mx-0 pb-10">
           <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center lg:text-start">
             My <span className="text-accent"> Experience </span>
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between md:px-14 xl:px-32 md:mx-3 lg:px-20 px-0 mx-5">
-          <div className="lg:w-4/12 xl:mb-0 mb-10 md:text-base text-sm md:mr-5 text-center lg:text-start text-fore/70">
-            <p>
+        <div className="flex flex-col lg:flex-row justify-between md:mx-0 px-0">
+          <div className="lg:w-4/12 lg:mb-0 mb-10 md:text-base text-sm md:mr-5 text-center lg:text-start text-fore">
+            <p className="leading-7">
               Utilizing my sets of technical and skills and knowledge in
               practical settings. I have engaged in projects and
               responsibilities, building a strong professional foundation in the
