@@ -99,13 +99,13 @@ const BriefInfo = () => {
           />
         </div>
       </div>
-      <div className="w-full px-10 xl:px-20 text-justify xl:text-left lg:text-base py-10 xl:py-0">
-        <p>
+      <div className="w-full px-5 md:px-10 xl:px-20 text-justify md:text-base text-[0.90rem] py-10 xl:py-0">
+        <p className="leading-7">
           Hello, I'm Sean Patrick A. Gomez, an Information Technology graduate
           with a strong foundation in front-end and back-end web development. I
           aim to create innovative and cutting edge solutions through
           technology, with a focus on web development and sustainable IT
-          practices. my adaptability and persistence drive me to continously
+          practices. My adaptability and persistence drive me to continously
           improve my technical skills and contribute meaningfully to the tech
           industry. Nice to meet you and welcome to my personal portfolio.
         </p>

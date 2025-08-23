@@ -78,7 +78,7 @@ const Projects = () => {
               <span className="text-xs md:text-sm text-fore py-2 italic">
                 {work.type}
               </span>
-              <p className="text-xs md:text-sm text-fore/70 py-3">
+              <p className="text-xs md:text-sm text-fore/70 py-3 !leading-6">
                 {work.description}
               </p>
 
