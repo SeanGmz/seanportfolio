@@ -50,9 +50,9 @@ export const Uppermarquee = () => {
           {[...stackList, ...stackList].map((tech, index) => (
             <Tooltip key={index}>
               <TooltipTrigger asChild>
-                <div className="px-5 py-5 mr-5 sm:mr-10 lg:mr-20 bg-secondary rounded-lg hover:bg-accent hover:text-[#18181b] text-accent transition ease-in-out duration-300 hover:-translate-y-1 cursor-pointer">
-                  <div className="relative flex justify-center items-center w-6 h-6 sm:w-10 sm:h-10 lg:w-20 lg:h-20">
-                    <div className="text-[2.25rem] sm:text-[3.25rem] lg:text-[4.10rem]">
+                <div className="px-5 py-5 mr-5 sm:mr-11 lg:mr-14 xl:mr-20 bg-secondary rounded-lg hover:bg-accent hover:text-[#18181b] text-accent transition ease-in-out duration-300 hover:-translate-y-1 cursor-pointer">
+                  <div className="relative flex justify-center items-center w-6 h-6 sm:w-10 sm:h-10 lg:w-14 lg:h-14 xl:w-20 xl:h-20">
+                    <div className="text-[2.25rem] sm:text-[3.25rem] lg:text-[3.45rem] xl:text-[4.10rem]">
                       {tech.src}
                     </div>
                   </div>
@@ -108,9 +108,9 @@ export const Lowermarquee = () => {
           {[...stackList, ...stackList].toReversed().map((tech, index) => (
             <Tooltip key={index}>
               <TooltipTrigger asChild>
-                <div className="px-5 py-5 mr-5 sm:mr-10 lg:mr-20 bg-secondary rounded-lg hover:bg-accent hover:text-[#18181b] text-accent transition ease-in-out duration-300 hover:-translate-y-1 cursor-pointer">
-                  <div className="relative flex justify-center items-center w-6 h-6 sm:w-10 sm:h-10 lg:w-20 lg:h-20">
-                    <div className="text-[2.25rem] sm:text-[3.25rem] lg:text-[4.10rem]">
+                 <div className="px-5 py-5 mr-5 sm:mr-11 lg:mr-14 xl:mr-20 bg-secondary rounded-lg hover:bg-accent hover:text-[#18181b] text-accent transition ease-in-out duration-300 hover:-translate-y-1 cursor-pointer">
+                  <div className="relative flex justify-center items-center w-6 h-6 sm:w-10 sm:h-10 lg:w-14 lg:h-14 xl:w-20 xl:h-20">
+                    <div className="text-[2.25rem] sm:text-[3.25rem] lg:text-[3.45rem] xl:text-[4.10rem]">
                       {tech.src}
                     </div>
                   </div>
