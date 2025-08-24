@@ -13,7 +13,7 @@ const Techstack = () => {
   };
   const MobileView = () => {
     return (
-      <div className="block md:hidden mx-9">
+      <div className="block md:hidden mx-5">
         <List />
       </div>
     );
