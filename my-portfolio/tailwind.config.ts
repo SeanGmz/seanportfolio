@@ -19,12 +19,16 @@ export default {
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
+  			sm: 'calc(var(--radius) - 4px)',
+  		},
+		fontFamily: {
+			jetbrains: ['"JetBrains Mono"', '"monospace"'],
+		}
   	},
   	screens: {
 		xs: '375px',
   		sm: '425px',
+		mid: '500px',	
   		md: '768px',
   		lg: '1024px',
   		xl: '1440px'
