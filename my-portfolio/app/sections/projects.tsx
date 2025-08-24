@@ -94,7 +94,7 @@ const Projects = () => {
                 href={work.link}
                 target="_blank"
                 rel="noopener"
-                className="mt-5 mx-auto xl:mx-0 xl:mt-5 w-48 flex flex-row items-center text-accent hover:text-background hover:bg-accent hover:border-accent border-accent border-[2px] rounded-full py-3 justify-center transition-all ease-in duration-150"
+                className="mt-5 mx-auto lg:mx-0 xl:mt-5 w-48 flex flex-row items-center text-accent hover:text-background hover:bg-accent hover:border-accent border-accent border-[2px] rounded-full py-3 justify-center transition-all ease-in duration-150"
               >
                 <span className="m-0 mr-2 lg:text-sm text-xs">
                   View Project
