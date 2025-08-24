@@ -28,13 +28,13 @@ Important Note: This is only a test, Contact form is under development`
       onSubmit={fetchData}
       className="flex flex-col gap-6 px-5 py-10 md:p-10 bg-secondary rounded-xl"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5">
         <Input type="text" placeholder="Fullname" name="fullname" required />
         <Input type="text" placeholder="Phone number" name="phone" required />
         <Input
           type="email"
           placeholder="Email address"
-          className=" md:col-span-2"
+          className="sm:col-span-2"
           name="email"
           required
         />
@@ -42,12 +42,12 @@ Important Note: This is only a test, Contact form is under development`
         <Input
           type="text"
           placeholder="Subject"
-          className=" md:col-span-2"
+          className="sm:col-span-2"
           name="subject"
           required
         />
         <Textarea
-          className="md:col-span-2 focus:ring-2"
+          className="sm:col-span-2 focus:ring-2"
           placeholder="Type your message here."
           name="message"
           required
@@ -56,7 +56,7 @@ Important Note: This is only a test, Contact form is under development`
       <div className="flex flex-row justify-center">
         <button
           type="submit"
-          className="mt-10 w-full xl:mx-0 xl:mt-5 text-background bg-accent hover:bg-accent/80  rounded-full px-8 py-3 transition-all ease-in duration-150"
+          className="md:mt-10 mt-4 w-full xl:mx-0 xl:mt-5 text-background bg-accent hover:bg-accent/80  rounded-full px-8 py-3 transition-all ease-in duration-150"
         >
           <span className="mx-auto text-sm md:text-base ">Submit response</span>
         </button>

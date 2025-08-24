@@ -45,7 +45,7 @@ const Background = () => {
           </h1>
         </div>
         <div className="flex flex-col lg:flex-row justify-between px-0">
-          <div className="lg:w-4/12 lg:mb-0 mb-10 md:text-base text-sm md:mr-5 text-center lg:text-start">
+          <div className="lg:w-5/12 xl:w-4/12 lg:mb-0 mb-10 md:text-base text-sm md:mr-5 text-center lg:text-start">
             <p className="leading-7 text-fore">
               Throughout my academic journey, I have developed a strong
               foundation in technology, programming, and system design,
@@ -57,21 +57,21 @@ const Background = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 pt-1 lg:max-h-[290px]">
               {education.map((ed, index) => (
                 <div
-                  className="bg-secondary rounded-xl xl:rounded-xl  text-xs h-[180px] md:h-[130px] flex flex-col justify-center items-center lg:items-start px-6 leading-5 transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10"
+                  className="bg-secondary rounded-xl text-xs h-[150px] mid:h-[130px] flex flex-col justify-center items-center lg:items-start px-6 leading-5 transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10"
                   key={index}
                 >
-                  <span className="h-2/6 md:py-6 pt-5 lg:text-[15px] text-[15px] text-accent ">
+                  <span className="h-2/6 md:py-6 pt-4 lg:pt-5 sm:text-[0.85rem] md:text-[0.95rem] text-[0.825rem] text-accent ">
                     {ed.year}
                   </span>
 
-                  <h3 className="h-2/6 lg:text-[16px] text-[15px] ">
+                  <h3 className="h-2/6 md:text-[1rem] text-[0.85rem] ">
                     {ed.school}
                   </h3>
 
                   <div className="h-2/6 flex flex-col sm:flex-row items-center sm:gap-2 lg:pb-3">
-                    <span className="lg:w-[4px] lg:h-[4px] rounded-full bg-accent"></span>
+                    <span className="hidden lg:block lg:w-[4px] lg:h-[4px] rounded-full bg-accent"></span>
 
-                    <p className="xl:text-[10px] md:text-[15px] text-fore/60 text-ellipsis ">
+                    <p className="lg:text-[0.80rem] md:text-[0.75rem] sm:text-[0.70rem] text-[0.65rem] text-fore/60 text-ellipsis ">
                       {ed.program}
                     </p>
                   </div>
@@ -93,7 +93,7 @@ const Background = () => {
           </h1>
         </div>
         <div className="flex flex-col lg:flex-row justify-between md:mx-0 px-0">
-          <div className="lg:w-4/12 lg:mb-0 mb-10 md:text-base text-sm md:mr-5 text-center lg:text-start text-fore">
+          <div className="lg:w-5/12 xl:w-4/12 lg:mb-0 mb-10 md:text-base text-sm md:mr-5 text-center lg:text-start text-fore">
             <p className="leading-7">
               Utilizing my sets of technical and skills and knowledge in
               practical settings. I have engaged in projects and
