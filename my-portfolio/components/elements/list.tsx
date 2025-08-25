@@ -11,7 +11,7 @@ import {
 
 export const List = () => {
   return (
-    <div className="grid grid-cols-3 mid:grid-cols-4 gap-y-5 gap-x-10 xs:gap-x-5 xs:gap-y-7 sm:gap-x-15 sm:gap-y-10 justify-center text-center items-center">
+    <div className="grid grid-cols-3 mid_md:grid-cols-4 gap-y-5 gap-x-10 xs:gap-x-5 xs:gap-y-7 sm:gap-x-15 sm:gap-y-10 justify-center text-center items-center">
       <TooltipProvider delayDuration={0}>
         {...stackList.toReversed().map((tech, index) => (
           <Tooltip key={index}>
