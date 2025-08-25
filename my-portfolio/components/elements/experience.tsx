@@ -40,26 +40,18 @@ export const WorkExperience = () => {
   };
 
   const RenderExperiences = () => {
+    // Check if the experience card is clicked (if returns unclicked and else returns clicked state)
+
     if (clickedIndex === null) {
       return (
         <ScrollArea className="lg:pr-4 lg:w-8/12 group">
-          <div
-            className={`${
-              clickedIndex === null
-                ? "grid grid-cols-1 xl:grid-cols-2 gap-5 lg:max-h-[290px] "
-                : "grid-cols-1 md:h-auto"
-            } pt-1`}
-          >
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 lg:max-h-[290px] pt-1">
             <TooltipProvider>
-              {experience.map((ed, index) => (
+              {experience.map((exp, index) => (
                 <Tooltip delayDuration={500} key={index}>
                   <TooltipTrigger asChild>
                     <div
-                      className={`bg-secondary rounded-xl xl:rounded-xl text-xs transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10 cursor-pointer ${
-                        clickedIndex === null
-                          ? " h-[180px] md:h-[130px]"
-                          : " h-auto md:h-auto overflow-y-auto"
-                      }  flex flex-col justify-center items-center lg:items-start px-6 leading-5 }`}
+                      className="bg-secondary rounded-xl text-xs h-[150px] mid_md:h-[130px] flex flex-col justify-center items-center lg:items-start px-6 leading-5 transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10"
                       onClick={() => handleClick(index)}
                       style={{
                         display:
@@ -68,57 +60,28 @@ export const WorkExperience = () => {
                             : "none",
                       }}
                     >
-                      <span
-                        className={` ${
-                          clickedIndex === null
-                            ? "h-2/6 md:py-6 pt-5"
-                            : "h-[10%] pt-5 "
-                        }  lg:text-[15px] text-[15px] text-accent`}
-                      >
-                        {ed.duration}
+                      <span className="h-2/6 md:py-6 pt-4 lg:pt-5 sm:text-[0.85rem] md:text-[0.95rem] text-[0.825rem] text-accent">
+                        {exp.duration}
                       </span>
 
-                      <h3
-                        className={` ${
-                          clickedIndex === null ? "h-2/6 " : "h-[10%] pt-1 "
-                        } lg:text-[16px] text-[15px] `}
-                      >
-                        {ed.company}
+                      <h3 className="h-2/6 md:text-[1rem] text-[0.85rem] ">
+                        {exp.company}
                       </h3>
 
-                      <div
-                        className={` ${
-                          clickedIndex === null
-                            ? "h-2/6 lg:pb-3"
-                            : "h-[10%] pt-3"
-                        }  flex flex-col sm:flex-row items-center sm:gap-2 `}
-                      >
+                      <div className="h-2/6 lg:pb-3 flex flex-col sm:flex-row items-center sm:gap-2">
                         <span className="lg:w-[4px] lg:h-[4px] rounded-full bg-accent"></span>
 
-                        <p
-                          className={` ${
-                            clickedIndex === null
-                              ? " xl:text-[10px]"
-                              : " xl:text-[15px]"
-                          } md:text-[15px] text-fore/60 text-ellipsis`}
-                        >
-                          {ed.position}
+                        <p className="xl:text-[0.65rem] lg:text-[0.80rem] md:text-[0.75rem] sm:text-[0.70rem] text-[0.65rem] text-fore/60 text-ellipsis">
+                          {exp.position}
                         </p>
                       </div>
 
                       {clickedIndex === index && (
                         <div className="additional-content w-full h-[40%]  pb-6">
-                          {/* Add your additional content here */}
                           <p className="text-[12px] xl:text-[13px] text-fore/70 mt-4">
-                            {ed.description}
+                            {exp.description}
                           </p>
-                          <p
-                            className={` ${
-                              clickedIndex === null
-                                ? " xl:text-[12px] "
-                                : " xl:text-[13px] "
-                            } align-bottom mx-auto mt-5 pt-5 italic text-center`}
-                          >
+                          <p className="xl:text-[12px] align-bottom mx-auto mt-5 pt-5 italic text-center">
                             Click again to close
                           </p>
                         </div>
@@ -135,23 +98,18 @@ export const WorkExperience = () => {
           </div>
         </ScrollArea>
       );
-    } else {
+    } 
+    
+    
+    
+    
+    else {
       return (
         <ScrollArea className="lg:pr-4 lg:w-8/12 group">
-          <div
-            className={`${
-              clickedIndex === null
-                ? "grid grid-cols-1 xl:grid-cols-2 gap-5 md:max-h-[290px] "
-                : "grid-cols-1 md:h-auto"
-            } pt-1`}
-          >
-            {experience.map((ed, index) => (
+          <div className="grid-cols-1 md:h-auto pt-1">
+            {experience.map((exp, index) => (
               <div
-                className={`bg-secondary rounded-xl xl:rounded-xl text-xs transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10 cursor-pointer ${
-                  clickedIndex === null
-                    ? " h-[180px] md:h-[130px]"
-                    : " h-auto md:h-auto overflow-y-auto"
-                }  flex flex-col justify-center items-center lg:items-start px-6 leading-5 }`}
+                className="bg-secondary rounded-xl xl:rounded-xl text-xs transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10 cursor-pointer h-auto md:h-auto overflow-y-auto flex flex-col justify-center items-center lg:items-start px-6 leading-5"
                 onClick={() => handleClick(index)}
                 key={index}
                 style={{
@@ -161,55 +119,28 @@ export const WorkExperience = () => {
                       : "none",
                 }}
               >
-                <span
-                  className={` ${
-                    clickedIndex === null
-                      ? "h-2/6 md:py-6 pt-5"
-                      : "h-[10%] pt-5 "
-                  }  lg:text-[15px] text-[15px] text-accent`}
-                >
-                  {ed.duration}
+                <span className="h-[10%] pt-5 lg:text-[15px] text-[15px] text-accent">
+                  {exp.duration}
                 </span>
 
-                <h3
-                  className={` ${
-                    clickedIndex === null ? "h-2/6 " : "h-[10%] pt-1 "
-                  } lg:text-[16px] text-[15px] `}
-                >
-                  {ed.company}
+                <h3 className="h-[10%] pt-1 lg:text-[16px] text-[15px]">
+                  {exp.company}
                 </h3>
 
-                <div
-                  className={` ${
-                    clickedIndex === null ? "h-2/6 lg:pb-3" : "h-[10%] pt-3"
-                  }  flex flex-col sm:flex-row items-center sm:gap-2 `}
-                >
+                <div className="h-[10%] pt-3 flex flex-col sm:flex-row items-center sm:gap-2">
                   <span className="lg:w-[4px] lg:h-[4px] rounded-full bg-accent"></span>
 
-                  <p
-                    className={` ${
-                      clickedIndex === null
-                        ? " xl:text-[10px]"
-                        : " xl:text-[15px]"
-                    } md:text-[15px] text-fore/60 text-ellipsis`}
-                  >
-                    {ed.position}
+                  <p className="xl:text-[15px] md:text-[15px] text-fore/60 text-ellipsis">
+                    {exp.position}
                   </p>
                 </div>
 
                 {clickedIndex === index && (
                   <div className="additional-content w-full h-[40%]  pb-6">
-                    {/* Add your additional content here */}
                     <p className="text-[12px] xl:text-[13px] text-fore/70 mt-4">
-                      {ed.description}
+                      {exp.description}
                     </p>
-                    <p
-                      className={` ${
-                        clickedIndex === null
-                          ? " xl:text-[12px] "
-                          : " xl:text-[13px] "
-                      } align-bottom mx-auto mt-5 pt-5 italic text-center`}
-                    >
+                    <p className="xl:text-[13px] align-bottom mx-auto mt-5 pt-5 italic text-center">
                       Click again to close
                     </p>
                   </div>
