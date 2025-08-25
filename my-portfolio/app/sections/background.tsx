@@ -57,7 +57,7 @@ const Background = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 pt-1 lg:max-h-[290px]">
               {education.map((ed, index) => (
                 <div
-                  className="bg-secondary rounded-xl text-xs h-[150px] mid:h-[130px] flex flex-col justify-center items-center lg:items-start px-6 leading-5 transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10"
+                  className="bg-secondary rounded-xl text-xs h-[150px] mid_md:h-[130px] flex flex-col justify-center items-center lg:items-start px-6 leading-5 transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10"
                   key={index}
                 >
                   <span className="h-2/6 md:py-6 pt-4 lg:pt-5 sm:text-[0.85rem] md:text-[0.95rem] text-[0.825rem] text-accent ">
@@ -71,7 +71,7 @@ const Background = () => {
                   <div className="h-2/6 flex flex-col sm:flex-row items-center sm:gap-2 lg:pb-3">
                     <span className="hidden lg:block lg:w-[4px] lg:h-[4px] rounded-full bg-accent"></span>
 
-                    <p className="lg:text-[0.80rem] md:text-[0.75rem] sm:text-[0.70rem] text-[0.65rem] text-fore/60 text-ellipsis ">
+                    <p className=" xl:text-[0.65rem] lg:text-[0.80rem] md:text-[0.75rem] sm:text-[0.70rem] text-[0.65rem] text-fore/60 text-ellipsis ">
                       {ed.program}
                     </p>
                   </div>

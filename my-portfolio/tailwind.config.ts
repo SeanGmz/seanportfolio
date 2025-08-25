@@ -27,10 +27,13 @@ export default {
   	},
   	screens: {
 		xs: '375px',
+		mid_sm: '400px',
   		sm: '425px',
-		mid: '500px',	
+		mid_md: '500px',
   		md: '768px',
+		mid_lg: '850px',
   		lg: '1024px',
+		mid_xl: '1280px',
   		xl: '1440px'
   	}
   },
