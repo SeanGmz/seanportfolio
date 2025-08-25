@@ -5,7 +5,7 @@ import { Uppermarquee, Lowermarquee } from "@/components/elements/maquee";
 const Techstack = () => {
   const DesktopView = () => {
     return (
-      <div className="hidden md:block">
+      <div className="hidden md:block xl:px-0 mid_xl:px-12 lg:px-5">
         <Uppermarquee />
         <Lowermarquee />
       </div>

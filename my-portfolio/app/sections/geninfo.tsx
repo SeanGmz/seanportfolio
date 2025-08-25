@@ -85,7 +85,7 @@ const BriefInfo = () => {
   return (
     <div
       id="about"
-      className="flex flex-col xl:flex-row justify-between xl:px-32 py-24 items-center"
+      className="flex flex-col xl:flex-row justify-between xl:px-32 mid_xl:px-16 lg:px-10 py-24 items-center"
     >
       <div className="w-full text-center">
         <div className="relative mx-auto w-[200px] h-[200px] xl:w-[300px] xl:h-[300px] rounded-full">
