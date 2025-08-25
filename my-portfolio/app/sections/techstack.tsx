@@ -21,8 +21,8 @@ const Techstack = () => {
 
   return (
     <div className="py-20 md:py-24 overflow-x-hidden">
-      <div id="techstack" className="pb-10 md:pb-20">
-        <h1 className="text-2xl sm:text-4xl text-center">My Tech Stack</h1>
+      <div id="techstack" className="pb-10 md:pb-20 mx-5 xl:mx-0 xl:px-32 mid_xl:px-16 lg:px-10 ">
+        <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center lg:text-start">My <span className="text-accent">Tech Stack</span></h1>
       </div>
       <DesktopView />
       <MobileView />

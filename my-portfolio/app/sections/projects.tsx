@@ -59,8 +59,8 @@ const Projects = () => {
   return (
     <div id="projects" className="pt-36 pb-14">
       <div className="justify-center">
-        <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center mb-20">
-          My Previous Projects
+        <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center lg:text-start mx-5 xl:mx-0 xl:px-32 mid_xl:px-16 lg:px-10 mb-20">
+          My <span className="text-accent">Projects</span>
         </h1>
       </div>
 
