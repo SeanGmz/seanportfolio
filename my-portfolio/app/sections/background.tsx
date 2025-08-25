@@ -54,7 +54,7 @@ const Background = () => {
             </p>
           </div>
           <ScrollArea className="lg:pr-4 lg:w-8/12 group">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-5 lg:gap-3 gap-5 pt-1 lg:max-h-[290px]">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 pt-1 lg:max-h-[290px]">
               {education.map((ed, index) => (
                 <div
                   className="bg-secondary rounded-xl text-xs h-[150px] mid_md:h-[130px] flex flex-col justify-center items-center lg:items-start px-6 leading-5 transition ease-in-out hover:-translate-y-1 duration-300 hover:bg-fore/10"
