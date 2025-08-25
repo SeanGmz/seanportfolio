@@ -68,7 +68,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-fore py-3 mt-3 md:py-8 md:mt-0  xl:px-36 lg:px-30 md:px-20 px-5">
+    <div className="text-fore py-3 mt-3 md:py-8 md:mt-0 mx-5 xl:mx-0 xl:px-32 mid_xl:px-16 lg:px-10 ">
       <div className="mx-auto flex justify-between items-center">
         <Link href="/">
           <h1 className="text-2xl sm:text-3xl md:text-4xl tracking-widest"> SG<span className="text-[#ededed]/50">&bull;</span><span className="text-accent">Dev</span></h1>
