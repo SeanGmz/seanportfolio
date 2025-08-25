@@ -68,9 +68,9 @@ const Projects = () => {
         return (
           <div
             key={index}
-            className="flex flex-col lg:flex-row justify-between mb-16 items-center mx-5 xl:mx-0 xl:px-32 py-5"
+            className="flex flex-col lg:flex-row justify-between mb-16 items-center mx-5 xl:mx-0 xl:px-32 mid_xl:px-16 lg:px-10 py-5"
           >
-            <div className="flex flex-col xl:w-[40%] lg:order-none order-2 lg:pr-5">
+            <div className="flex flex-col xl:w-[40%] lg:w-6/12 lg:order-none order-2 lg:pr-5">
               <span className="md:text-6xl text-4xl text-accent/70 py-3">
                 {work.num}
               </span>
@@ -102,7 +102,7 @@ const Projects = () => {
                 <FaGithub className="text-lg" />
               </Link>
             </div>
-            <div className="flex xl:w-[50%] w-full justify-center items-center">
+            <div className="flex xl:w-[50%] lg:w-6/12 w-full justify-center items-center">
               <div className="relative xl:w-[600px] xl:h-[350px] lg:w-[500px] lg:h-[300px] w-[370px] h-[250px] overflow-hidden lg:order-none order-1 ">
                 <Image
                   src={work.img}

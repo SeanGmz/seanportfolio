@@ -37,7 +37,7 @@ const Background = () => {
     return (
       <div
         id="background"
-        className="flex flex-col pt-32 text-center lg:text-start lg:h-[80%] xl:mx-0 mx-5 xl:px-32"
+        className="flex flex-col pt-32 text-center lg:text-start lg:h-[80%] xl:mx-0 mx-5 xl:px-32 mid_xl:px-16 lg:px-10"
       >
         <div className="pb-10">
           <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center lg:text-start">
@@ -86,7 +86,7 @@ const Background = () => {
 
   const WorkBg = () => {
     return (
-      <div className="flex flex-col py-28 justify-center text-center lg:text-start lg:h-[80%] xl:mx-0 mx-5 xl:px-32">
+      <div className="flex flex-col py-28 justify-center text-center lg:text-start lg:h-[80%] xl:mx-0 mx-5 xl:px-32 mid_xl:px-16 lg:px-10">
         <div className="md:mx-0 pb-10">
           <h1 className="xl:text-4xl sm:text-4xl text-2xl text-center lg:text-start">
             My <span className="text-accent"> Experience </span>
