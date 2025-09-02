@@ -101,6 +101,9 @@ const Background = () => {
               field. These experiences deepened my overall understanding of the
               professional world.
             </p>
+            <p className="text-fore/70 text-xs mt-3 leading-7 italic">
+              <span className="text-accent">&bull; </span>Click on the experience cards to learn more.
+            </p>
           </div>
           <WorkExperience />
         </div>
