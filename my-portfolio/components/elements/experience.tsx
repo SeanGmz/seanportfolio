@@ -44,7 +44,7 @@ export const WorkExperience = () => {
 
     if (clickedIndex === null) {
       return (
-        <ScrollArea className="lg:pr-4 lg:w-8/12 group">
+        <ScrollArea className="lg:pr-4 lg:w-8/12 group cursor-pointer">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 lg:max-h-[290px] pt-1">
             <TooltipProvider>
               {experience.map((exp, index) => (
@@ -141,7 +141,7 @@ export const WorkExperience = () => {
                       {exp.description}
                     </p>
                     <p className="xl:text-[13px] align-bottom mx-auto mt-5 pt-5 italic text-center">
-                      Click again to close
+                      Click again to dismiss
                     </p>
                   </div>
                 )}
